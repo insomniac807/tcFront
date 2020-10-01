@@ -38,7 +38,7 @@ const config = function(root) {
 
     express: {
       viewsPath: join(root, '/app/views'),
-      staticPath: join(root, '/app/static')
+      staticPath: join(root, '/public')
     },
 
     rooms: {

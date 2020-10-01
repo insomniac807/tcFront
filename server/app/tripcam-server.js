@@ -41,12 +41,12 @@ class TripcamServer {
 
   configureWebRoutes(config, app) {
     // Configure home routes
-    app.get('/', (req, res) => {
-        var path = require('path');
-        console.log(path.resolve('../public/index.html'));
-        console.log(__dirname);
-        res.sendFile(path.resolve('../public/index.html'));
-     });
+    // app.get('/', (req, res) => {
+    //     var path = require('path');
+    //     console.log(path.resolve('../public/index.html'));
+    //     console.log(__dirname);
+    //     //res.sendFile(path.resolve('../src/main.js'));
+    //  });
     // app.get('/room/:roomid', ((req, res) => {
     //     res.render('room', { roomid: req.params.roomid, serverAddress: this.config.wss.serverAddress });
     // }).bind(this));

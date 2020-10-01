@@ -3,6 +3,7 @@
 ## Get me
 ```
 git clone https://github.com/insomniac807/tcFront
+cd tcFront
 ```
 
 ### get client dependencies

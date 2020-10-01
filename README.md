@@ -1,24 +1,33 @@
-# test-app
+# tripcam with vue front end
 
-## Project setup
+## Get me
+```
+git clone https://github.com/insomniac807/tcFront
+```
+
+### Customize configuration (copy and paste from config.example.js, edit as required)
+```
+touch config.js
+```
+
+### get client dependencies
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
+### Compiles and minifies client for production
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### cd into server and install dependencies
 ```
-npm run lint
+cd /server
+npm install
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### start server
+```
+node run
+```
+

@@ -5,11 +5,6 @@
 git clone https://github.com/insomniac807/tcFront
 ```
 
-### Customize configuration (copy and paste from config.example.js, edit as required)
-```
-touch config.js
-```
-
 ### get client dependencies
 ```
 npm install
@@ -24,6 +19,11 @@ npm run build
 ```
 cd /server
 npm install
+```
+
+### Customize configuration (copy and paste from config.example.js, edit as required)
+```
+touch config.js
 ```
 
 ### start server

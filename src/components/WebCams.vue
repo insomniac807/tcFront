@@ -47,12 +47,16 @@ export default {
     height: 100%;
     display: grid;
     grid-gap: 1em;
-    grid-template-rows: 1fr 1fr;
 }
 
 .two {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+}
+
+.four,
+.eight {
+    grid-template-rows: 1fr 1fr;
 }
 
 .four {

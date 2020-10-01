@@ -1,37 +1,25 @@
 <template>
 <div class="camera-panes" v-bind:class="{'two': isTwo, 'four': isFour, 'eight': isEight}">
-    <div v-for="cam in cams" :key="cam.uid">
-        <Camera uid="cam.uid" />
+    <div v-for="webcam in allWebcams" :key="webcam.uid">
+        <Camera uid="webcam.uid" />
     </div>
 </div>
 </template>
 
 <script>
 import Camera from "./Camera";
+import {
+    mapGetters
+} from 'vuex';
+
 export default {
     name: "WebCams",
+    computed: mapGetters(['allWebcams']),
     components: {
         Camera
     },
     data: function () {
         return {
-            cams: [{
-                uid: 1
-            }, {
-                uid: 2
-            }, {
-                uid: 3
-            }, {
-                uid: 4
-            }, {
-                uid: 5
-            }, {
-                uid: 6
-            }, {
-                uid: 7
-            }, {
-                uid: 8
-            }, ],
             isTwo: false,
             isFour: false,
             isEight: true,

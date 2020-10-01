@@ -1,0 +1,20 @@
+{
+    "name": "tripcam-server",
+    "version": "0.0.1",
+    "description": "Server component to tripcam",
+    "main": "run.js",
+    "scripts": {
+      "run": "node run.js",
+      "new-certs": "openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout ./certs/server.key -out ./certs/server.crt"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "async": "^2.6.3",
+      "express": "^4.17.1",
+      "lodash": "^4.17.15",
+      "pako": "^1.0.11",
+      "pug": "^2.0.4",
+      "websocket": "^1.0.32"
+    }
+  }

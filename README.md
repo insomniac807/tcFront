@@ -24,11 +24,11 @@ npm install
 
 ### Customize configuration (copy and paste from config.example.js, edit as required)
 ```
-touch config.js
+mv config.sample.js config.js
 ```
 
 ### start server
 ```
-node run
+sudo node run
 ```
 
